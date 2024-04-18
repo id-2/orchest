@@ -8,36 +8,44 @@
     # via -r requirements.in
 aiodocker==0.21.0
     # via -r requirements.in
-aiohttp==3.7.4
+aiohttp==3.9.4
     # via
     #   -r requirements.in
     #   aiodocker
-async-timeout==3.0.1
+aiosignal==1.3.1
+    # via aiohttp
+async-timeout==4.0.3
     # via aiohttp
 attrs==21.4.0
     # via aiohttp
 backoff==1.11.1
     # via posthog
-certifi==2022.12.7
+certifi==2023.7.22
     # via requests
-chardet==3.0.4
-    # via aiohttp
 charset-normalizer==2.0.12
     # via requests
 click==8.1.2
     # via flask
-flask==2.1.1
+flask==2.2.5
     # via sanitized-package
-idna==3.3
+frozenlist==1.4.1
+    # via
+    #   aiohttp
+    #   aiosignal
+idna==3.7
     # via
     #   requests
     #   yarl
+importlib-metadata==7.1.0
+    # via flask
 itsdangerous==2.1.2
     # via flask
-jinja2==3.1.1
+jinja2==3.1.3
     # via flask
 markupsafe==2.1.1
-    # via jinja2
+    # via
+    #   jinja2
+    #   werkzeug
 monotonic==1.6
     # via posthog
 multidict==6.0.2
@@ -48,7 +56,7 @@ posthog==1.4.7
     # via sanitized-package
 python-dateutil==2.8.2
     # via posthog
-requests==2.27.1
+requests==2.31.0
     # via
     #   posthog
     #   sanitized-package
@@ -57,12 +65,12 @@ six==1.16.0
     #   posthog
     #   python-dateutil
 typing-extensions==4.1.1
-    # via
-    #   aiodocker
-    #   aiohttp
-urllib3==1.26.9
+    # via aiodocker
+urllib3==1.26.18
     # via requests
-werkzeug==2.1.1
+werkzeug==3.0.2
     # via flask
 yarl==1.7.2
     # via aiohttp
+zipp==3.18.1
+    # via importlib-metadata
